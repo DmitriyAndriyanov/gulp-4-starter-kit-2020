@@ -41,8 +41,9 @@ $ gulp
 ````
 
 ## Project Structure
-
-├── src               #The folder for developers, in which all the source codes of the project are located
-├── public            #A folder that contains optimized finished pages with all the necessary resources
-├── gulpfile.js       #File with gulp tasks
-└── package.json      #File with dependencies
+````
+├── src              #The folder for developers, in which all the source codes of the project are located
+├── public           #A folder that contains optimized finished pages with all the necessary resources
+├── gulpfile.js      #File with gulp tasks
+└── package.json     #File with dependencies
+````
