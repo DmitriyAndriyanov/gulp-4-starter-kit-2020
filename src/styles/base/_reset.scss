@@ -1,0 +1,225 @@
+/* Reset CSS */
+* {
+    -webkit-text-size-adjust: none
+}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video, main {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {
+    display: block;
+}
+html {
+    height: 100%;
+    -webkit-text-size-adjust: none;
+    font-size: $base-font-size;
+    @media only screen and (max-width: $mobile-width) {
+        font-size: $mobile-font-size;
+    }
+}
+body {
+    height: 100%;
+    position: relative;
+    background-color: $base-background-color;
+    font-size: 1rem;
+    line-height: $base-line-height;
+    font-family: $base-font-family;
+    color: $base-text-color;
+    min-width: $base-min-width;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    &.nav-visible,
+    &.popup-visible {
+        overflow: hidden;
+    }
+}
+ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+// adaptive images
+img {
+    max-width: 100%;
+    height: auto;
+    &.responsive {
+        display: block;
+        width: 100%;
+    }
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+input, select, textarea {
+    vertical-align: top;
+}
+textarea {
+    overflow: auto;
+}
+select {
+    appearance: none;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 31px;
+    height: 33px;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    padding: 0 20px 0 8px;
+    background: $white url('../images/arrows-select.png') no-repeat 100% 50%;
+    background-size: 15px 11px;
+}
+.container {
+    margin: 0 auto;
+    max-width: $content-max-width;
+    padding-left: $side-space;
+    padding-right: $side-space;
+    &.full-width {
+        max-width: 100%;
+    }
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    @media only screen and (max-width: 990px) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    @media only screen and (max-width: $mobile-width) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+a {
+    color: $base-link-color;
+    text-decoration: underline;
+    vertical-align: baseline;
+    -webkit-tap-highlight-color: transparent;
+    &:hover {
+        text-decoration: none;
+    }
+    &.disabled {
+        cursor: default !important;
+    }
+}
+h1, h2, h3, h4, h5, h6, ul, ol, p {
+    margin: 0 0 1rem;
+}
+mark {
+    color: #f00;
+    background: none;
+}
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="email"],
+input[type="number"] {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid $border-color;
+    border-radius: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    line-height: 20px;
+    padding: 5px;
+    height: 32px;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 5px 0 0;
+    padding: 0;
+    width: 16px;
+    height: 16px;
+}
+.text-right {
+    text-align: right;
+}
+.text-center {
+    text-align: center;
+}
+.sp,
+.sp-flex {
+    display: none;
+}
+.pc {
+    display: block;
+}
+.dn {
+    display: none !important;
+}
+.w-100 {
+    width: 100% !important;
+}
+.d-block {
+    display: block;
+}
+.text-left {
+    text-align: left !important;
+}
+.text-right {
+    text-align: right;
+}
+.d-flex {
+    display: flex;
+}
+.d-table {
+    display: table;
+}
+.align-center {
+    align-items: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-right {
+    justify-content: flex-end;
+}
+.justify-center {
+    justify-content: center;
+}
+.no-border {
+    border: 0 !important;
+}
+@media only screen and (min-width: $mobile-width) {
+    .pc-dn,
+    .hidden-desktop {
+        display: none !important;
+    }
+}
+// Smartphone
+@media only screen and (max-width: $mobile-width) {
+    .sp,
+    .sp-db {
+        display: block !important;
+    }
+    .sp-flex {
+        display: flex !important;
+    }
+    .pc,
+    .hidden-mobile,
+    .sp-dn {
+        display: none !important;
+    }
+}
+/* main wrapper styles */
+.wrapper {
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+}

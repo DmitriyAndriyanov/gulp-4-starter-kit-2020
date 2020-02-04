@@ -1,0 +1,35 @@
+// Sass Variables
+// Colors
+$black: #000;
+$white: #fff;
+$blue: #007ab9;
+$gray: #b3b3b3;
+$light-gray: #f2f2f2;
+$red: #f00;
+$border-color: #ccc;
+
+// Body
+$base-font-size: 14px !default;
+$mobile-font-size: 12px !default;
+$base-line-height: 1.5 !default;
+$base-text-color: #111 !default;
+$base-font-family: "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif !default;
+$base-background-color: $light-gray !default;
+$base-min-width: 320px;
+
+// Links
+$base-link-color: $blue;
+
+// Grid
+$content-max-width: 960px;
+$side-space: 40px;
+
+// Tablet view
+$tablet-width: 990px;
+
+// Smartphone view
+$mobile-width: 767px;
+
+// Animation
+$animation-speed: 0.5s;
+$animation-func: ease;
